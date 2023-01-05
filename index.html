@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230105192605" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230105192605">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__row">
+            <div class="header__column">
+                <a href="index.html" class="header__logo">
+                    <picture><source srcset="img/header/logo/icon.webp" type="image/webp"><img src="img/header/logo/icon.png" alt="logo-icon"></picture>
+                    <picture><source srcset="img/header/logo/text.webp" type="image/webp"><img src="img/header/logo/text.png" alt="logo-text"></picture>
+                </a>
+                <div class="header__search">
+                    <input autocomplete='off' type='text' name='form[]' placeholder="Поиск по товарам"
+                        class='header__input'>
+                    <span><picture><source srcset="img/header/icon/search-icon.webp" type="image/webp"><img src="img/header/icon/search-icon.png" alt="search-icon"></picture></span>
+                </div>
+                <div class="header__lenguages lenguages-header" data-da="mob-header__body, 0, 768">
+                    <a href="" class="lenguages-header__item active">Ru</a>
+                    <a href="" class="lenguages-header__item">En</a>
+                    <a href="" class="lenguages-header__item">De</a>
+                </div>
+            </div>
+            <div class="header__column">
+                <nav class="header__menu menu" data-da="mob-header__body, 1, 1602">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">О нас</a>
+                            <img src="img/header/services-arrow.svg" alt="arrow">
+                        </li>
+                        <li class="menu__item">
+                            <a href="delivery.html" class="menu__link">Доставка и оплата</a>
+                            <img src="img/header/services-arrow.svg" alt="arrow">
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__link">Контакты</a>
+                            <img src="img/header/services-arrow.svg" alt="arrow">
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__communication communication-header" data-da="mob-header__body, 2, 1602">
+                    <a href="" class="communication-header__item">
+                        <picture><source srcset="img/header/icon/01.webp" type="image/webp"><img src="img/header/icon/01.png" alt="whatsapp"></picture>
+                    </a>
+                    <a href="" class="communication-header__item">
+                        <picture><source srcset="img/header/icon/02.webp" type="image/webp"><img src="img/header/icon/02.png" alt="viber"></picture>
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="header__mob mob-header">
+            <div class="mob-header__container container">
+                <div class="mob-header__body"></div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="page-main main main-general">
+            <div class="main__bg bg ibg">
+                <div class="bg__item ibg" style="display: block;" data-bg="1"><picture><source srcset="img/main/bg/01.webp" type="image/webp"><img src="img/main/bg/01.png" alt="bg"></picture>
+                </div>
+                <div class="bg__item ibg" style="display: none;" data-bg="2"><picture><source srcset="img/main/bg/02.webp" type="image/webp"><img src="img/main/bg/02.png" alt="bg"></picture>
+                </div>
+                <div class="bg__item ibg" style="display: none;" data-bg="3"><picture><source srcset="img/main/bg/03.webp" type="image/webp"><img src="img/main/bg/03.png" alt="bg"></picture>
+                </div>
+            </div>
+            <div class="main__services services">
+                <div class="services__container container">
+                    <div class="services__row">
+                        <!-- Slides -->
+                        <div class="services__slide slide-small slide-left slide-hide__left" data-slide="1"
+                            data-num="1">
+                            <div class="slide-small__item">
+                                <div class="slide-small__image ibg">
+                                    <picture><source srcset="img/main/slider/01.webp" type="image/webp"><img src="img/main/slider/01.png" alt="bg"></picture>
+                                </div>
+                                <div class="slide-small__content">
+                                    <div class="slide-small__number">/ 01</div>
+                                    <div class="slide-small__service">Техническое оборудование</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="services__slide slide-small slide-left slide-hide__left" data-slide="2"
+                            data-num="2">
+                            <div class="slide-small__item">
+                                <div class="slide-small__image ibg">
+                                    <picture><source srcset="img/main/slider/02.webp" type="image/webp"><img src="img/main/slider/02.png" alt="bg"></picture>
+                                </div>
+                                <div class="slide-small__content">
+                                    <div class="slide-small__number">/ 02</div>
+                                    <div class="slide-small__service">Металлопрокат</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="services__slide slide-services">
+                            <div class="slide-services__content content-services">
+                                <div class="content-services__body body-services">
+                                    <div class="body-services__content">
+                                        <div class="body-services__title">РуСТЕФ —</div>
+                                        <div class="body-services__text">надёжный поставщик стройматериалов и
+                                            технического
+                                            оборудования</div>
+                                    </div>
+                                    <div class="body-services__arrow"><picture><source srcset="img/main/icons/arrow.webp" type="image/webp"><img src="img/main/icons/arrow.png" alt="arrow"></picture>
+                                    </div>
+                                </div>
+                                <div class="content-services__info info-services">
+                                    <div class="info-services__timer timer"><span>/ 01</span>
+                                    </div>
+                                    <div class="info-services__text text-services">
+                                        <div class="text-services__top">
+                                            <span>></span> 10 лет
+                                        </div>
+                                        <div class="text-services__bottom">Закрываем потребности
+                                            вашего бизнеса больше </div>
+                                    </div>
+                                </div>
+                                <div class="content-services__footer footer-services">
+                                    <div class="footer-services__service">Техническое оборудование</div>
+                                    <a href="" class="footer-services__btn">Подробнее <span>🠞</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="services__slide slide-small slide-right" data-slide="1" data-num="2">
+                            <div class="slide-small__item">
+                                <div class="slide-small__image ibg">
+                                    <picture><source srcset="img/main/slider/02.webp" type="image/webp"><img src="img/main/slider/02.png" alt="bg"></picture>
+                                </div>
+                                <div class="slide-small__content">
+                                    <div class="slide-small__number">/ 02</div>
+                                    <div class="slide-small__service">Металлопрокат</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slides -->
+                        <div class="services__slide slide-small slide-right" data-slide="2" data-num="3">
+                            <div class="slide-small__item">
+                                <div class="slide-small__image ibg">
+                                    <picture><source srcset="img/main/slider/03.webp" type="image/webp"><img src="img/main/slider/03.png" alt="bg"></picture>
+                                </div>
+                                <div class="slide-small__content">
+                                    <div class="slide-small__number">/ 03</div>
+                                    <div class="slide-small__service">Нерудные и рудные материалы</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="js/app.min.js?_v=20230105192605"></script>
+    </div>
+</body>
+
+</html>

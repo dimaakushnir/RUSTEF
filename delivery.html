@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230105192605" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230105192605">
+    <title>Доставка и оплата</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <svg display="none">
+    <symbol id="arrow" viewBox="0 0 16 16">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00033 2.00033C4.68662 2.00033 2.00033 4.68662 2.00033 8.00033C2.00033 11.314 4.68662 14.0003 8.00033 14.0003C11.314 14.0003 14.0003 11.314 14.0003 8.00033C14.0003 4.68662 11.314 2.00033 8.00033 2.00033ZM0.666992 8.00033C0.666992 3.95024 3.95024 0.666992 8.00033 0.666992C12.0504 0.666992 15.3337 3.95024 15.3337 8.00033C15.3337 12.0504 12.0504 15.3337 8.00033 15.3337C3.95024 15.3337 0.666992 12.0504 0.666992 8.00033Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.86225 7.52892C5.1226 7.26857 5.54471 7.26857 5.80506 7.52892L8.00033 9.72418L10.1956 7.52892C10.4559 7.26857 10.878 7.26857 11.1384 7.52892C11.3987 7.78927 11.3987 8.21138 11.1384 8.47173L8.47173 11.1384C8.21138 11.3987 7.78927 11.3987 7.52892 11.1384L4.86225 8.47173C4.6019 8.21138 4.6019 7.78927 4.86225 7.52892Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00033 4.66699C8.36852 4.66699 8.66699 4.96547 8.66699 5.33366V10.667C8.66699 11.0352 8.36852 11.3337 8.00033 11.3337C7.63214 11.3337 7.33366 11.0352 7.33366 10.667V5.33366C7.33366 4.96547 7.63214 4.66699 8.00033 4.66699Z" />
+        </g>
+    </symbol>
+    <symbol id="openmax" viewBox="0 0 18 18">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.5 2.25C10.5 1.83579 10.8358 1.5 11.25 1.5H15.75C16.1642 1.5 16.5 1.83579 16.5 2.25V6.75C16.5 7.16421 16.1642 7.5 15.75 7.5C15.3358 7.5 15 7.16421 15 6.75V3H11.25C10.8358 3 10.5 2.66421 10.5 2.25Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.25 10.5C2.66421 10.5 3 10.8358 3 11.25V15H6.75C7.16421 15 7.5 15.3358 7.5 15.75C7.5 16.1642 7.16421 16.5 6.75 16.5H2.25C1.83579 16.5 1.5 16.1642 1.5 15.75V11.25C1.5 10.8358 1.83579 10.5 2.25 10.5Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.2803 1.71967C16.5732 2.01256 16.5732 2.48744 16.2803 2.78033L11.0303 8.03033C10.7374 8.32322 10.2626 8.32322 9.96967 8.03033C9.67678 7.73744 9.67678 7.26256 9.96967 6.96967L15.2197 1.71967C15.5126 1.42678 15.9874 1.42678 16.2803 1.71967Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.03033 9.96967C8.32322 10.2626 8.32322 10.7374 8.03033 11.0303L2.78033 16.2803C2.48744 16.5732 2.01256 16.5732 1.71967 16.2803C1.42678 15.9874 1.42678 15.5126 1.71967 15.2197L6.96967 9.96967C7.26256 9.67678 7.73744 9.67678 8.03033 9.96967Z" />
+        </g>
+    </symbol>
+    <symbol id="arrow-orange" viewBox="0 0 26 30">
+        <g>
+            <path d="M1.94921 27.9926L24.1361 2.09344M24.1361 2.09344L1.67786 2.09963M24.1361 2.09344L24.1361 24.6576"
+                stroke-width="2.99179" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+    </symbol>
+</svg>
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__row">
+            <div class="header__column">
+                <a href="index.html" class="header__logo">
+                    <picture><source srcset="img/header/logo/icon.webp" type="image/webp"><img src="img/header/logo/icon.png" alt="logo-icon"></picture>
+                    <picture><source srcset="img/header/logo/text.webp" type="image/webp"><img src="img/header/logo/text.png" alt="logo-text"></picture>
+                </a>
+                <div class="header__search">
+                    <input autocomplete='off' type='text' name='form[]' placeholder="Поиск по товарам"
+                        class='header__input'>
+                    <span><picture><source srcset="img/header/icon/search-icon.webp" type="image/webp"><img src="img/header/icon/search-icon.png" alt="search-icon"></picture></span>
+                </div>
+                <div class="header__lenguages lenguages-header" data-da="mob-header__body, 0, 768">
+                    <a href="" class="lenguages-header__item active">Ru</a>
+                    <a href="" class="lenguages-header__item">En</a>
+                    <a href="" class="lenguages-header__item">De</a>
+                </div>
+            </div>
+            <div class="header__column">
+                <nav class="header__menu menu" data-da="mob-header__body, 1, 1602">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">О нас</a>
+                            <img src="img/header/services-arrow.svg" alt="arrow">
+                        </li>
+                        <li class="menu__item">
+                            <a href="delivery.html" class="menu__link">Доставка и оплата</a>
+                            <img src="img/header/services-arrow.svg" alt="arrow">
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__link">Контакты</a>
+                            <img src="img/header/services-arrow.svg" alt="arrow">
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__communication communication-header" data-da="mob-header__body, 2, 1602">
+                    <a href="" class="communication-header__item">
+                        <picture><source srcset="img/header/icon/01.webp" type="image/webp"><img src="img/header/icon/01.png" alt="whatsapp"></picture>
+                    </a>
+                    <a href="" class="communication-header__item">
+                        <picture><source srcset="img/header/icon/02.webp" type="image/webp"><img src="img/header/icon/02.png" alt="viber"></picture>
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="header__mob mob-header">
+            <div class="mob-header__container container">
+                <div class="mob-header__body"></div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="page-main main main-delivery">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__container container">
+                    <div class="breadcrumbs__list">
+                        <li>
+                            <a href="index.html" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="breadcrumbs__link">Доставка и оплата</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <section class="delivery">
+                <div class="delivery__container container">
+                    <div class="delivery__body">
+                        <div class="delivery__bg ibg">
+                            <picture><source srcset="img/delivery/bg.webp" type="image/webp"><img src="img/delivery/bg.png" alt="bg"></picture>
+                        </div>
+                        <h2 class="delivery__title title">доставка и оплата</h2>
+                        <div class="delivery__row">
+                            <div class="delivery__column">
+                                <div class="delivery__item delivery__item_1">
+                                    <div class="delivery__header">
+                                        <h3 class="delivery__label">Доставка</h3>
+                                        <svg class="delivery__arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="delivery__text" data-da="delivery__item_1, 3, 768">
+                                        Мы осуществляем доставку по всей России как
+                                        Транспортными компаниями, так и различной грузовой техникой из нашего парка.
+                                    </div>
+                                    <div class="delivery__image">
+                                        <div class="delivery__img ibg">
+                                            <picture><source srcset="img/delivery/01.webp" type="image/webp"><img src="img/delivery/01.png" alt="delivery"></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery__column">
+                                <div class="delivery__item delivery__item_2">
+                                    <div class="delivery__header">
+                                        <h3 class="delivery__label">Оплата</h3>
+                                        <svg class="delivery__arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="delivery__text" data-da="delivery__item_2, 3, 768">
+                                        Мы принимаем платежи на расчетный счет, и наличный / банковский расчет при
+                                        самовывозе для физических лиц.
+                                    </div>
+                                    <div class="delivery__image">
+                                        <div class="delivery__img ibg">
+                                            <picture><source srcset="img/delivery/02.webp" type="image/webp"><img src="img/delivery/02.png" alt="payment"></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery__column">
+                                <div class="delivery__item delivery__item_3">
+                                    <div class="delivery__header">
+                                        <h3 class="delivery__label">Самовывоз</h3>
+                                        <svg class="delivery__arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="delivery__text" data-da="delivery__item_3, 3, 768">
+                                        Самовывоз возможен с нашего Склада только по доверенности или печати, либо по
+                                        паспорту для Физиеских лиц.
+                                    </div>
+                                    <div class="delivery__image">
+                                        <div class="delivery__img ibg">
+                                            <picture><source srcset="img/delivery/03.webp" type="image/webp"><img src="img/delivery/03.png" alt="pickup"></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery__column">
+                                <div class="delivery__item delivery__item_4">
+                                    <div class="delivery__header">
+                                        <h3 class="delivery__label">Гарантия</h3>
+                                        <svg class="delivery__arrow">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="delivery__text" data-da="delivery__item_4, 3, 768">
+                                        Нас выбирают с 2013г. Мы работаем с крупнейшими компаниями, но даже имея свои
+                                        производственные цеха, мы являемся официальными дилерами таких компаний как:
+                                        Dauer, Bauchemi, Старатели, Knauff, Северсталь, ЕВРАЗ, и многими другими включая
+                                        заводы по производству технического оборудования. Мы придерживаемся мнения, что
+                                        только объединившись можно достичь большего!
+                                    </div>
+                                    <div class="delivery__image">
+                                        <div class="delivery__img ibg">
+                                            <picture><source srcset="img/delivery/04.webp" type="image/webp"><img src="img/delivery/04.png" alt="guarantee"></picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/app.min.js?_v=20230105192605"></script>
+    </div>
+</body>
+
+</html>
